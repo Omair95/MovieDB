@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/lib/com.example.moviedb.moviedb;"
+    xmlns:app2="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.moviedb.moviedb.AddFilm">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_check_white_48dp"
+        app:backgroundTint="@color/okElement"
+        app:srcCompat="@mipmap/ic_plus" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="70dp"
+            android:id="@+id/textView5"
+            android:layout_alignStart="@+id/textView10" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editDirector"
+            android:layout_below="@+id/editTitle"
+            android:layout_alignStart="@+id/editTitle"
+            android:hint="Director's name" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editCountry"
+            android:layout_below="@+id/editDirector"
+            android:layout_alignStart="@+id/editDirector"
+            android:hint="Country of production" />
+
+        <TextView
+            android:text="Director"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:layout_alignBaseline="@+id/editDirector"
+            android:layout_alignBottom="@+id/editDirector"
+            android:layout_toStartOf="@+id/editDirector" />
+
+        <TextView
+            android:text="Country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView9"
+            android:layout_alignBaseline="@+id/editCountry"
+            android:layout_alignBottom="@+id/editCountry"
+            android:layout_toStartOf="@+id/editCountry" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:layout_below="@+id/editCountry"
+            android:layout_alignStart="@+id/editCountry"
+            android:id="@+id/editYear"
+            android:hint="Year of production" />
+
+        <TextView
+            android:text="Year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView10"
+            android:layout_alignBaseline="@+id/editYear"
+            android:layout_alignBottom="@+id/editYear"
+            android:layout_toStartOf="@+id/editYear" />
+
+        <TextView
+            android:text="Starring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8"
+            android:layout_below="@+id/editYear"
+            android:layout_marginTop="14dp"
+
+            android:layout_alignStart="@+id/textView4" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editProta"
+            android:hint="Actor/Actress name..."
+            android:layout_below="@+id/editYear"
+            android:layout_alignStart="@+id/editYear" />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editProta"
+            android:layout_alignStart="@+id/editProta"
+            android:id="@+id/ratingBar"
+            android:isIndicator="false"
+            android:stepSize="1.0"
+            android:rating="0"
+            android:numStars="5" />
+
+        <TextView
+            android:text="Critics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            android:layout_below="@+id/editProta"
+            android:layout_toStartOf="@+id/ratingBar"
+            android:layout_marginTop="17dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editTitle"
+            android:hint="Film Title"
+            android:layout_alignBaseline="@+id/textView5"
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

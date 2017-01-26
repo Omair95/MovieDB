@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bwq="http://schemas.android.com/tools">
+
+    <group android:checkableBehavior="single"></group>
+
+    <item android:title="">
+        <menu >
+            <item
+                android:title="Add Film"
+                android:id="@+id/Addfilm"
+                android:icon="@mipmap/ic_plus"
+                android:visible="true"
+                android:enabled="true" />
+            <item
+                android:title="Search Film"
+                android:id="@+id/Searchfilm"
+                android:icon="@drawable/abc_ic_search_api_mtrl_alpha" />
+            <item
+                android:title="Search Actor"
+                android:id="@+id/SearchActor"
+                android:icon="@drawable/abc_ic_search_api_mtrl_alpha" />
+            <item android:title="Remove Film"
+                android:id="@+id/RemoveFilmsNavigation"
+                android:icon="@android:drawable/ic_menu_delete" />
+            <item android:title="Modify Critics"
+                android:id="@+id/EditFilmNavigation"
+                android:icon="@android:drawable/ic_menu_edit" />
+            <item android:title="Sort by year"
+                android:id="@+id/SortYear"
+                android:icon="@mipmap/ic_year" />
+            <item android:title="Sort by title"
+                android:id="@+id/SortTitle"
+                android:icon="@mipmap/ic_title" />
+        </menu>
+        <menu>
+            <item
+                android:id="@+id/info"
+                android:icon="@mipmap/ic_info"
+                android:title="Help" />
+            <item
+                android:id="@+id/about"
+                android:icon="@mipmap/ic_about"
+                android:title="About" />
+
+
+        </menu>
+    </item>
+
+</menu>
